@@ -101,7 +101,7 @@ depression-detection/
 ├── requirements.txt
 │
 ├── notebooks/
-│   └── experiments.ipynb                # Full training and evaluation notebook
+│   └── Binary_Class_Test_Model.ipynb                # Full training and evaluation notebook
 │
 └── results/
     ├── confusion_matrix.png
@@ -110,16 +110,16 @@ depression-detection/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 
-## 📦 Requirements
+## Requirements
 
 > Full list available in `requirements.txt`
 
 ---
 
-## 📚 Citation
+## Citation
 
 If you use this code in your research, please cite:
 
@@ -147,7 +147,7 @@ If you use this code in your research, please cite:
 
 ---
 
-## 🔭 Future Work
+## Future Work
 
 - Extend to **multiclass PHQ-8 severity classification** (mild, moderate, severe)
 - Integrate **uncertainty quantification** for clinical reliability
@@ -164,7 +164,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - Dataset: DAIC-WOZ — developed through the [SimSensei project](https://dcapswoz.ict.usc.edu) by USC ICT
 - Presented at **ICITACEE 2025** — awarded **Best Presenter**
