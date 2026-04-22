@@ -1,0 +1,21 @@
+# Core
+numpy
+pandas
+ 
+# Deep Learning
+tensorflow
+torch
+ 
+# NLP
+transformers
+ 
+# Audio Processing
+librosa
+ 
+# Machine Learning
+scikit-learn
+imbalanced-learn
+ 
+# Visualization
+matplotlib
+seaborn
