@@ -7,7 +7,7 @@
 
 > 📄 **Published at:** 12th International Conference on Information Technology, Computer, and Electrical Engineering (ICITACEE), 2025 — **Best Presenter Award**
 >
-> 🔗 **IEEE Xplore:** [View Paper](https://ieeexplore.ieee.org) *(update with actual DOI link)*
+> 🔗 **IEEE Xplore:** [View Paper](https://doi.org/10.1109/ICITACEE66165.2025.11232572)
 
 ---
 
