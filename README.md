@@ -25,7 +25,7 @@ Despite being trained on only **97 participants** due to storage constraints, th
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 
 The proposed architecture consists of three modality-specific subnetworks followed by a cross-modal attention fusion layer:
 
@@ -51,7 +51,7 @@ Visual Input──► Visual Subnetwork──► Projected Visual Emb.──┘
 
 ---
 
-## ⚙️ Training Configuration
+## Training Configuration
 
 | Parameter | Value |
 |---|---|
@@ -75,7 +75,7 @@ Visual Input──► Visual Subnetwork──► Projected Visual Emb.──┘
 
 ---
 
-## 📊 Results
+## Results
 
 ### Classification Report
 
@@ -91,7 +91,7 @@ The confusion matrix shows 5/6 non-depressed and 11/14 depressed samples correct
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```
 depression-detection/
@@ -99,21 +99,6 @@ depression-detection/
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
-│
-├── src/
-│   ├── preprocessing/
-│   │   ├── audio_preprocessing.py       # MFCC, COVAREP, Formant extraction
-│   │   ├── visual_preprocessing.py      # OpenFace feature extraction
-│   │   └── text_preprocessing.py        # BERT embedding extraction
-│   │
-│   ├── models/
-│   │   ├── audio_subnetwork.py          # SimpleRNN-based audio branch
-│   │   ├── visual_subnetwork.py         # Conv1D-based visual branch
-│   │   ├── text_subnetwork.py           # Dense-based text branch
-│   │   └── cross_modal_attention.py     # Multi-head cross-modal attention fusion
-│   │
-│   └── evaluation/
-│       └── evaluate.py                  # Metrics, confusion matrix, classification report
 │
 ├── notebooks/
 │   └── experiments.ipynb                # Full training and evaluation notebook
@@ -127,64 +112,8 @@ depression-detection/
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/[your-username]/depression-detection.git
-cd depression-detection
-```
-
-### 2. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Prepare the Dataset
-
-> ⚠️ **Note:** The DAIC-WOZ dataset is **not included** in this repository due to licensing restrictions.
->
-> To obtain access, please submit a request through the official portal:
-> 👉 [https://dcapswoz.ict.usc.edu](https://dcapswoz.ict.usc.edu)
->
-> Once approved, place the dataset in the `data/` directory following the structure expected in the preprocessing scripts.
-
-### 4. Run Preprocessing
-
-```bash
-python src/preprocessing/audio_preprocessing.py
-python src/preprocessing/visual_preprocessing.py
-python src/preprocessing/text_preprocessing.py
-```
-
-### 5. Train the Model
-
-```bash
-python src/models/cross_modal_attention.py
-```
-
-Or run the full pipeline via the notebook:
-
-```bash
-jupyter notebook notebooks/experiments.ipynb
-```
-
----
 
 ## 📦 Requirements
-
-```
-tensorflow>=2.x
-transformers
-scikit-learn
-imbalanced-learn
-openface
-pandas
-numpy
-matplotlib
-seaborn
-jupyter
-```
 
 > Full list available in `requirements.txt`
 
@@ -195,12 +124,16 @@ jupyter
 If you use this code in your research, please cite:
 
 ```bibtex
-@inproceedings{shaabihah2025crossmodal,
-  title     = {Cross-Modal Attention for Multimodal Depression Detection Using Limited DAIC-WOZ Data},
-  author    = {Shaabihah, Farras and Kusnawi, Kusnawi},
-  booktitle = {Proceedings of the 12th International Conference on Information Technology, Computer, and Electrical Engineering (ICITACEE)},
-  year      = {2025},
-  publisher = {IEEE}
+@INPROCEEDINGS{11232572,
+  author={Shaabihah, Farras and Kusnawi, Kusnawi},
+  booktitle={2025 12th International Conference on Information Technology, Computer, and Electrical Engineering (ICITACEE)}, 
+  title={Cross-Modal Attention for Multimodal Depression Detection Using Limited DAIC-WOZ Data}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Visualization;Accuracy;Uncertainty;Computational modeling;Telemedicine;Mental health;Depression;Feature extraction;Robustness;Information technology;Depression detection;multimodal fusion;crossmodal attention;deep learning;DAIC-WOZ;mental health AI;intermediate fusion},
+  doi={10.1109/ICITACEE66165.2025.11232572}
 }
 ```
 
